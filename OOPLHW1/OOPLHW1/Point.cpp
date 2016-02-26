@@ -26,10 +26,11 @@ void Point::SetX(double a)
 {
 	x = a;
 }
-void Point::SetY(double b)
+void Point::SetY(double b) 
 {
 	y = b;
 }
+
 void Point::SetZ(double c) 
 {
 	z = c;
@@ -45,4 +46,16 @@ double Point::GetY()
 double Point::GetZ() 
 {
 	return z;
+}
+void Point::ScaleABC()
+{
+	x = -2 * x;
+	y = 0.5 * y;
+	z = 5 * z;
+
+}
+void Point::ScaleVector()
+{
+	//не съм сигурен как точно се транслираа с вектор дефиниран по този начин : (0,0,4,0). Т'ва нещо четириизмерно ли е? А гравитационни вълни трябва ли да ползваме? :)
+
 }

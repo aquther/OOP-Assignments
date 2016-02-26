@@ -13,6 +13,9 @@ public:
 	double GetX();
 	double GetY();
 	double GetZ();
+	
+	void ScaleABC();
+	void ScaleVector();
 
 private:
 	double x;
